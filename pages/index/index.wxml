@@ -1,0 +1,18 @@
+<view class="container">
+<view wx:if="{{!hasUserInfo && canIUse}}" > 
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入体检 </button>
+ </view>
+  <view class="userinfo" wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+     <view>
+<radio-group class="radio-group" bindchange="sexChange">
+  <label class="radio" wx:for="{{sexList}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</radio-group>
+     </view>
+     <view>  <button type="primary" bindtap="save"> 确定 </button></view>
+  </view>
+ 
+</view>
