@@ -1,6 +1,9 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/basic-info/basic-info",
+    "pages/diary-list/diary-list",
+    "pages/user-center/user-center",
     "pages/logs/logs"
   ],
   "window":{

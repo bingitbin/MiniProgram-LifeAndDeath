@@ -8,3 +8,20 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }  */
+page{
+  font-size:12px;
+}
+.common_foot_container{
+  position:fixed;
+  border-top:1px solid #efefef;
+  bottom:0;
+  width:100%;
+  line-height:42px;
+  display:flex;
+  justify-content:space-between;
+}
+.page-foot{
+  display:inline-block;
+  width:168px;
+  text-align:center;
+}
